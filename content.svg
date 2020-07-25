@@ -6,9 +6,6 @@
                     justify-content: center;
                     flex-direction: column;
                     align-items: center;
-                    -webkit-perspective: 800px;
-                    -moz-perspective: 800px;
-                    perspective: 800px;
                     background: radial-gradient(#aaa, #fff, #fff);
                     display: flex;
                     height: 800px;
@@ -34,6 +31,10 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    -webkit-perspective: 800px;
+                    -moz-perspective: 800px;
+                    perspective: 800px;
+                    perspective-origin: center center;
                 }
 
                 .mesh {
