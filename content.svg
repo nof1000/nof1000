@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none">
-	<foreignObject width="100%" height="100%">
+	<foreignObject width="100%" height="100%" style="perspective: 800px">
 		<div xmlns="http://www.w3.org/1999/xhtml">
             <style>
                 .main {
