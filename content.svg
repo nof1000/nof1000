@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                .main {
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    perspective: 800px;
+                    background: radial-gradient(#aaa, #fff);
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .text {
+                    font: normal 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+                }
+
+                .text--source {
+                    padding-top: 2rem;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+
+                .text--void {
+                    font-weight: bold;
+                    font-size: 28px;
+                }
+
+                .content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .mesh {
+                    animation: cube 7.5s infinite linear;
+                    transform-style: preserve-3d;
+                    width: 15rem;
+                    height: 10rem;
+                }
+
+                @keyframes cube {
+                    0% { transform: translateX(0rem) translateZ(0rem) rotateY(0deg); }
+                    50% { transform: translateX(-5rem) translateZ(-2.5rem) rotateY(180deg); }
+                    100% { transform: translateX(0rem) translateZ(0rem) rotateY(360deg); }
+                }
+
+                .mesh__plane {
+                    position: absolute;
+                    background-color: black;
+                    width: 10rem;
+                    height: 10rem;
+                    box-shadow: inset 0 0 64px 0 rgba(127, 127, 127, 0.5);
+                }
+
+                .mesh__plane--back {
+                    transform: translateZ(-5rem);
+                }
+
+                .mesh__plane--front {
+                    transform: translateZ(5rem);
+                }
+
+                .mesh__plane--top {
+                    transform: translateY(-5rem) rotateX(90deg);
+                }
+
+                .mesh__plane--bottom {
+                    transform: translateY(5rem) rotateX(90deg);
+                }
+
+                .mesh__plane--left {
+                    transform: translateX(-5rem) rotateY(90deg);
+                }
+
+                .mesh__plane--right {
+                    transform: translateX(5rem) rotateY(90deg);
+                }
+            </style>
+            <div class="main">
+                <div class="content">
+                <div class="mesh">
+                    <div class="mesh__plane mesh__plane--back"></div>
+                    <div class="mesh__plane mesh__plane--left"></div>
+                    <div class="mesh__plane mesh__plane--right"></div>
+                    <div class="mesh__plane mesh__plane--top"></div>
+                    <div class="mesh__plane mesh__plane--bottom"></div>
+                    <div class="mesh__plane mesh__plane--front"></div>
+                </div>
+                <p class="text text--void">VOID</p>
+                </div>
+                <p class="text text--source">(source code)</p>
+            </div>
+		</div>
+	</foreignObject>
+</svg>
