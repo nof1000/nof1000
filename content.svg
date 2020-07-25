@@ -72,6 +72,7 @@
 
                 .mesh__plane--bottom {
                     transform: translateY(5rem) rotateX(90deg);
+                    box-shadow: 0 0 32px 8px black;
                 }
 
                 .mesh__plane--left {
